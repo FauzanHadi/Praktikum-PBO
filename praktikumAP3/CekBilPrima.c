@@ -16,13 +16,16 @@ int main(){
             if(N % i == 0)
             prima++;
         }
-    }
         if (prima == 2){
             printf("Bilangan Prima");
         }
         else {
             printf("Bukan bilangan Prima");
         }
+    }
+    else{
+        printf("Masukan tidak boleh kurang dari sama dengan NOL")
+    }
         
     return 0;
 }

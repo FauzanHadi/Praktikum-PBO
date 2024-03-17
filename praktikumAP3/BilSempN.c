@@ -5,20 +5,20 @@
 #include<stdio.h>
 
 int main(){
-    int N, i, j, s;
+    int N, i, j, Semp;
 
     printf("Masukan nilai N: ");
     scanf("%d", &N);
 
     if (N > 0){
         for(i = 1; i <= N; i++){
-            s = 0;
+            Semp = 0;
             for (j = 1; j < i; j++){
                 if (i % j == 0){
-                    s = s + j;
+                    Semp = Semp + j;
                 }
             }
-            if (s == i){
+            if (Semp == i){
                 printf("%d ", i);
             }
         }

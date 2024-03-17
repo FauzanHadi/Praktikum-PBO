@@ -14,9 +14,12 @@ int main(){
         printf("babak: %d\n", babak);
         C = A - B;
         printf("C + %d", C);
+        A = B;
+        printf("A = %d\n", A);
+        B = C;
+        printf("B = %d\n", B);
     }
 
-    // Tampilkan hasil
     if (B == 0) {
         printf("Kongou menang!\n");
     } else {

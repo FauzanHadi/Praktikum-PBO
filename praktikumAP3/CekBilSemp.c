@@ -5,7 +5,7 @@
 #include<stdio.h>
 
 int main(){
-    int N, i, total = 0;
+    int N, i, Semp;
 
     printf("Masukan bilangan N: ");
     scanf("%d", &N);
@@ -14,13 +14,14 @@ int main(){
         printf("Nilai N harus positif");
     }
     else{
+        Semp = 0;
         for(i = 1; i <= N/2; i++){
             if(N % i == 0){
-            total += i;
+            Semp += i;
             }
         }
     }
-        if(total == N){
+        if(Semp == N){
             printf("%d adalah bilangan sempurna", N);
         }
         else{
